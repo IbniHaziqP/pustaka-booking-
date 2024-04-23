@@ -1,16 +1,16 @@
 <html>
 
 <head>
-    <title>Form Input Matakuliah</title>
+    <title>Form Daftar Riwayat Hidup</title>
 </head>
 
 <body>
     <center>
-        <form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
+        <form action="<?= base_url('daftar/cetak'); ?>" method="post">
             <table>
                 <tr>
                     <th colspan="3">
-                        Form Input Data Mata Kuliah
+                        Form Input Daftar Riwayat Hidup
                     </th>
                 </tr>
 
@@ -20,34 +20,49 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Kode MTK</th>
+                    <th>NIM</th>
                     <th>:</th>
                     <td>
-                        <input type="text" name="kode" id="kode" placeholder="Required">
+                        <input type="number" name="kode" id="kode" placeholder="Required">
                         <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
                     </td>
                 </tr>
                 <tr>
-                    <th>Nama MTK</th>
+                    <th>Nama</th>
                     <td>:</td>
                     <td>
                         <input type="text" name="nama" id="nama" placeholder="Required">
                         <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
                     </td>
                 </tr>
-                
+
                 <tr>
-                    <th>SKS</th>
+                    <th>Tanggal Lahir</th>
                     <td>:</td>
                     <td>
-                        <select name="sks" id="sks">
-                            <option value="">Pilih SKS</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
+                        <input type="date" name="tanggal" id="tanggal">
                     </td>
                 </tr>
+
+                <tr>
+                    <th>Tempat Lahir</th>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="lahir" id="lahir" placeholder="Required">
+                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Alamat</th>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="alamat" id="alamat" placeholder="Required">
+                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
+                    </td>
+                </tr>
+
+
                 <tr>
                     <td colspan="3" align="center">
                         <input type="submit" value="Submit">
