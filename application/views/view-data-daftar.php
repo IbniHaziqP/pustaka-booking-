@@ -22,14 +22,14 @@
                 <td>NIM</td>
                 <td>:</td>
                 <td>
-                    <?= $kode; ?>
+                    <?= $nim; ?>
                 </td>
             </tr>
             <tr>
                 <td>Nama</td>
                 <td>:</td>
                 <td>
-                    <?= $nama; ?>
+                    <?= $name; ?>
                 </td>
             </tr>
 

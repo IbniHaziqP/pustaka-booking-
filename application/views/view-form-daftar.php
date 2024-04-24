@@ -23,16 +23,16 @@
                     <th>NIM</th>
                     <th>:</th>
                     <td>
-                        <input type="number" name="kode" id="kode" placeholder="Required">
-                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
+                        <input type="number" name="nim" id="nim" placeholder="Required">
+                        <div class="col-sm-6 col-danger"><?= form_error('nim');?></div>
                     </td>
                 </tr>
                 <tr>
                     <th>Nama</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="nama" id="nama" placeholder="Required">
-                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
+                        <input type="text" name="name" id="name" placeholder="Required">
+                        <div class="col-sm-6 col-danger"><?= form_error('name');?></div>
                     </td>
                 </tr>
 
@@ -40,7 +40,8 @@
                     <th>Tanggal Lahir</th>
                     <td>:</td>
                     <td>
-                        <input type="date" name="tanggal" id="tanggal">
+                        <input type="date" name="tanggal" id="tanggal" placeholder="Required">
+                        <div class="col-sm-6 col-danger"><?= form_error('tanggal');?></div>
                     </td>
                 </tr>
 
@@ -49,7 +50,7 @@
                     <td>:</td>
                     <td>
                         <input type="text" name="lahir" id="lahir" placeholder="Required">
-                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
+                        <div class="col-sm-6 col-danger"><?= form_error('lahir');?></div>
                     </td>
                 </tr>
 
@@ -58,7 +59,7 @@
                     <td>:</td>
                     <td>
                         <input type="text" name="alamat" id="alamat" placeholder="Required">
-                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
+                        <div class="col-sm-6 col-danger"><?= form_error('alamat');?></div>
                     </td>
                 </tr>
 
