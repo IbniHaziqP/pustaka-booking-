@@ -49,10 +49,10 @@
                                 </picture>
                             </td>
                             <td>
-                                <a href="<?= base_url('buku/ubahBuku/') . $b['id']; ?>" class="badge badge-info">
+                                <a href="<?= base_url('buku/ubahBuku/') . $b['id_kategori']; ?>" class="badge badge-info">
                                     <i class="fas fa-edit"></i> Ubah
                                 </a>
-                                <a href="<?= base_url('buku/hapusbuku/') . $b['id']; ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul . ' ' . $b['judul_buku']; ?> ?');" class="badge badge-danger">
+                                <a href="<?= base_url('buku/hapusBuku/') . $b['id_kategori']; ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul . ' ' . $b['judul_buku']; ?> ?');" class="badge badge-danger">
                                     <i class="fas fa-trash"></i> Hapus
                                 </a>
                             </td>
